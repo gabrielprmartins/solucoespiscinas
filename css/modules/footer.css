@@ -1,0 +1,15 @@
+.copy-container {
+  padding: 30px;
+}
+
+.copy-container p {
+  color: var(--blue-subtitle);
+  text-align: center;
+  font-size: 1.1275rem;
+}
+
+@media screen and (max-width: 400px) {
+  .copy-container p {
+    font-size: 1rem;
+  }
+}

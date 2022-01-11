@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--bg-body);
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.img-shadow img {
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn-arrow {
+  display: inline-block;
+  background: var(--bg-yellow);
+  padding: 12px 30px;
+  border-radius: 4px;
+  color: var(--yellow-3);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  line-height: 1;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.btn-arrow::after {
+  content: '';
+  display: inline-block;
+  background: url('../../assets/arrow.svg') no-repeat center center;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+}
+
+.btn-arrow:hover {
+  background: var(--bg-yellow-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-arrow:active {
+  background: var(--bg-yellow-active);
+  box-shadow: var(--shadow);
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 12px 30px;
+  color: var(--blue);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.btn-link:hover {
+  color: var(--blue-2);
+}
