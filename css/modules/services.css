@@ -67,6 +67,11 @@
   color: var(--blue-paragraph);
 }
 
+.services-link {
+  border: none;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 @media screen and (max-width: 1190px) {
   .services-title {
     grid-column: 1 / -1;

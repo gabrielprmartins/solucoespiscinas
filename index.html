@@ -19,7 +19,7 @@
       <nav class="menu">
         <ul>
           <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
+          <li><a href="#services" data-modal="open">Serviços</a></li>
           <li><a href="#contacts">Contatos</a></li>
         </ul>
       </nav>
@@ -51,17 +51,17 @@
       <div class="services-grid-2">
         <article class="service">
           <figure>
-            <img src="assets/services/service-image-1.jpg" alt="Aquecimento solar para piscina">
+            <img src="assets/services/service-image-1.jpg" alt="Manutenção/Limpeza de Saunas">
           </figure>
-          <h2 class="subtitle">Aquecimento solar para piscina</h2>
-          <p class="paragraph">Sistema de aquecimento por meio de placas instaladas ao ar livre que são alcançadas pela luz do sol.</p>
+          <h2 class="subtitle">Manutenção/Limpeza de Saunas</h2>
+          <p class="paragraph">Detenha toda e qualquer bactéria de sua sauna e garanta uma ótima manutenção preventiva com a substituição de resistência.</p>
         </article>
         <article class="service">
           <figure>
             <img src="assets/services/service-image-2.jpg" alt="Capa térmica 300 e 500 micras">
           </figure>
-          <h2 class="subtitle">Capa térmica 300 e 500 micras</h2>
-          <p class="paragraph">Evite a evaporação da água, mantenha a temperatura e facilite na limpeza de sua piscina.</p>
+          <h2 class="subtitle">Troca da areia do filtro da piscina</h2>
+          <p class="paragraph">A qualidade da filtração influencia diretamente na qualidade da água. Portanto, a troca é de extrema importância para a sua piscina.</p>
         </article>
       </div>
       <div class="services-grid-3">
@@ -88,7 +88,7 @@
         </article>
       </div>
     </div>
-    <a href="" class="btn-link services-link">Ver todos os serviços</a>
+    <button class="btn-link services-link" data-modal="open">Ver todos os serviços</button>
   </section>
   <!-- Contact -->
   <section class="contact">
@@ -110,7 +110,7 @@
           <span class="or">OU</span>
           <div class="contact-service">
             <h2 class="subtitle">Selecione um serviço</h2>
-            <a href="" class="btn-arrow">Ver serviços</a>
+            <button class="btn-arrow" data-modal="open">Ver serviços</button>
           </div>
         </div>
       </div>
@@ -139,6 +139,16 @@
       <p class="paragraph">Soluções Piscinas ©. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <!-- Services Modal -->
+  <div data-modal="container" class="modal-container">
+    <div class="modal-content" data-modal="content">
+      <button class="close-modal" data-modal="close">&times;</button>
+      <h1 class="title">Modal</h1>
+      <p class="paragraph">Esse é o modal.</p>
+    </div>
+  </div>
+  <!-- Script -->
+  <script type="module" src="script/script.js"></script>
 </body>
 
 </html>
