@@ -63,6 +63,8 @@ body {
   line-height: 1;
   box-shadow: var(--shadow);
   cursor: pointer;
+  border: none;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .btn-arrow::after {
@@ -93,6 +95,7 @@ body {
   text-decoration: underline;
   font-size: 1.1rem;
   line-height: 1;
+  cursor: pointer;
 }
 
 .btn-link:hover {
