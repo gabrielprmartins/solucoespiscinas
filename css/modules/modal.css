@@ -33,6 +33,17 @@
   background: var(--bg-yellow-active);
 }
 
+@keyframes showDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1000px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .modal-container.active {
   display: flex;
 }
@@ -46,9 +57,14 @@
   height: 80vh;
   color: var(--white);
   overflow-y: scroll;
+  animation: showDown 0.3s forwards;
 }
 
 .modal-content h1 {
+  margin-bottom: 10px;
+}
+
+.p-modal {
   margin-bottom: 30px;
 }
 
@@ -56,12 +72,25 @@
   position: relative;
 }
 
-.list-services li {
+.list-services li a {
   display: flex;
   align-items: center;
   gap: 30px;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px;
+  border-radius: 4px;
+  transition: all 0.056s;
+}
+
+.list-services li a:hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+.list-services li a img {
+  max-width: 10px;
+}
+
+.list-services li {
   position: relative;
 }
 
@@ -87,13 +116,6 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .list-services li {
-    flex-direction: column;
-    align-items: baseline;
-  }
-}
-
 @media screen and (max-width: 680px) {
   .modal-content h1 {
     font-size: 2rem;
@@ -104,7 +126,7 @@
   .modal-content h1 {
     margin-bottom: 20px;
   }
-  .list-services li {
+  .list-services li a {
     gap: 10px;
   }
 }
