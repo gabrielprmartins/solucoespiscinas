@@ -10,6 +10,10 @@
   gap: 30px;
 }
 
+.header-container a img {
+  max-width: 120px;
+}
+
 .menu ul {
   display: flex;
   align-items: center;
